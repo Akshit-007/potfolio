@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akshit Trivedi</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .main_div {
+            width: 100vw;
+            height: 100vh;
+            background-color: black;
+            display: grid;
+            place-items: center;
+
+        }
+
+        .center_div {
+            width: 15rem;
+            height: 15rem;
+            position: relative;
+        }
+
+        .rot {
+            position: absolute;
+            width: 15rem;
+            height: 15rem;
+            border-right: 5px solid #00bcd4;
+            border-radius: 50%;
+
+            animation: rot 2s linear infinite;
+        }
+
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: 50;
+            color: white;
+        }
+
+        @keyframes rot {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+                
+
+            .home_page
+            {
+              height:100vh;
+               width:100vw;
+               background-image: linear-gradient(to right,black,grey);
+            }
+            .content{
+                color:white;
+                /* position: relative; */
+                font-size:100px;
+                top:50%;
+                left:25%;
+            }
+
+    
+    </style>
+</head>
+
+<body>
+    <div class="container" id="container">
+        
+        <div class="main_div">
+            <div class="center_div">
+                <div class="rot">
+
+                </div>
+                <h1> Loading</h1>
+            </div>
+        </div>
+    
+
+    </div>
+    <div class="home_page">
+
+        <div class="content">
+            I'm a<br>
+            coder
+        </div>
+
+    </div>
+
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+    <script src="script.js"></script>
+
+</body>
+
+</html>
